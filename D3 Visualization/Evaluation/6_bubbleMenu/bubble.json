@@ -1,0 +1,26 @@
+{"name":"bubble", "children": [
+{"name":"Measurement Extraction","description":"Parser to extract measurements from dataset",
+"children":[
+    {"name": "Xhtml Conversion","address":"xhtmlConversion.html", "note":" Each file is converted to xhtml using tika html parser for further processing"},
+    {"name": "Tag Ratio Algorithm","address":"tagratio.html"},
+    {"name": "Tokenization & Dictionary Lookup","address":"tokendict.html","note":"Each token is compared with the POS Dictionary tags and recognized if a measurement"}
+]},
+{"name": "SWEET Ontology Extractor", "description": "Parser to extract SWEET concepts from the dataset",
+"children":[
+      {"name": "Xhtml Conversion","address":"xhtmlConversion.html", "note":" Each file is converted to xhtml using tika html parser for further processing"},
+  {"name": "Tag Ratio Algorithm","address":"tagratio.html"},  
+    {"name": "Tokenization & Dictionary Lookup","address":"tokendict2.html","note":"Each token is compared with the POS Dictionary tags and recognized if a SWEET Concept"}
+]},
+{"name":"Grobid Parser", "description":"Parser to extract related publications",
+"children":[
+    {"name":"Annotation","address":"tei.html"},
+    {"name":"Parsing","address":"parser.html"},
+    {"name":"Google Scholar API","address":"google.html"}
+]},
+{"name":"Geotopic Parser", "description":"extract the geographical locations, latitude and longitude from the dataset",
+"children":[
+     {"name": "Xhtml Conversion","address":"xhtmlConversion.html", "note":" Each file is converted to xhtml using tika html parser for further processing"},
+    {"name": "Tag Ratio Algorithm","address":"tagratio.html"},
+    {"name":"Geotopic Parser","address":"geoparsing.html"}
+]}
+]}

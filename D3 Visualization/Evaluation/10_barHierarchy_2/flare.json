@@ -1,0 +1,359 @@
+{
+ "name": "flare",
+  "children": [
+
+    {"name":".gov",
+      "children":[ 
+        {"name":"Distance",
+          "children":[
+          {"name": "Miles", "children":[{"name":"minimum" ,"size":0.6214 },{"name":"maximum" ,"size":5909},{"name":"average" ,"size":2954.8}]},
+        {"name": "Meters", "children":[{"name":"minimum" ,"size":0 },{"name":"maximum" ,"size":5500},{"name":"average" ,"size":2750}]},
+        {"name": "Meters Per", "children":[{"name":"minimum" ,"size":244 },{"name":"maximum" ,"size":467},{"name":"average" ,"size":355.5}]}
+          ]
+        },
+        {"name":"Temperature",
+          "children":[
+      {"name": "Degree", "children":[{"name":"minimum" ,"size":0.05 },{"name":"maximum" ,"size":180},{"name":"average" ,"size":90.025}]},
+      {"name": "Celcius", "children":[{"name":"minimum" ,"size":2 },{"name":"maximum" ,"size":40},{"name":"average" ,"size":21}]},
+      {"name": "Kelvin", "children":[{"name":"minimum" ,"size":23 },{"name":"maximum" ,"size":77},{"name":"average" ,"size":50}]}
+          ]
+        },
+        {"name":"Mass",
+          "children":[
+          {"name": "kilogram", "children":[{"name":"minimum" ,"size":0.4536},{"name":"maximum" ,"size":45},{"name":"average" ,"size":27.72}]},
+    {"name": "per kilogram", "children":[{"name":"minimum" ,"size":0.5 },{"name":"maximum" ,"size":6.75},{"name":"average" ,"size":3.625}]}
+]
+        },
+        {"name":"Light/Magnetism",
+          "children":[
+            {"name":"Weber","children":[{"name":"minimum" ,"size":18776 },{"name":"maximum" ,"size":44146},{"name":"average" ,"size":31461}]},
+            {"name":"Lux","children":[{"name":"minimum" ,"size":45185 },{"name":"maximum" ,"size":59890},{"name":"average" ,"size":52537.5}]},
+            {"name":"Gray","children":[{"name":"minimum" ,"size":5 },{"name":"maximum" ,"size":49773},{"name":"average" ,"size":24889}]}
+          ]
+
+        },
+        {"name":"Volume/Area/Surface",
+          "children":[
+            {"name":"Meter-Square","children":[{"name":"minimum" ,"size":0.25 },{"name":"maximum" ,"size":1000},{"name":"average" ,"size":500.125}]},
+            {"name":"Per Cubic Meter","children":[{"name":"minimum" ,"size":2.03 },{"name":"maximum" ,"size":3},{"name":"average" ,"size":2.515}]},
+            {"name":"Cubic Meter","children":[{"name":"minimum" ,"size":0.764 },{"name":"maximum" ,"size":9.58},{"name":"average" ,"size":5.17}]},
+            {"name":"per Meter Square","children":[{"name":"minimum" ,"size":69 },{"name":"maximum" ,"size":512},{"name":"average" ,"size":290.5}]},
+            {"name":"per Meter cube","children":[{"name":"minimum" ,"size":0.70 },{"name":"maximum" ,"size":650 },{"name":"average" ,"size":360}]},
+            {"name":"Square","children":[{"name":"minimum" ,"size":1.1774 },{"name":"maximum" ,"size":151},{"name":"average" ,"size":76.08}]},
+            {"name":"cubic","children":[{"name":"minimum" ,"size":0.1 },{"name":"maximum" ,"size":833.33},{"name":"average" ,"size":416.77}]}
+          ]
+        },
+
+        {"name":"Force",
+        "children":[
+          {"name":"Newton","children":[{"name":"minimum" ,"size":3350 },{"name":"maximum" ,"size":40545},{"name":"average" ,"size":21947.5}]},
+          {"name":"Joule","children":[{"name":"minimum" ,"size":4.184 },{"name":"maximum" ,"size":6.75},{"name":"average" ,"size":5.46}]},
+          {"name":"Watt","children":[{"name":"minimum" ,"size":50290 },{"name":"maximum" ,"size":56820},{"name":"average" ,"size":53555}]}
+        ]
+        },
+        {"name":"Time/Frequency",
+          "children":[
+            {"name":"Minutes","children":[{"name":"minimum" ,"size":2 },{"name":"maximum" ,"size":2014},{"name":"average" ,"size":1008}]},
+            {"name":"per second","children":[{"name":"minimum" ,"size":25 },{"name":"maximum" ,"size":30},{"name":"average" ,"size":27.5}]},
+            {"name":"seconds","children":[{"name":"minimum" ,"size":0.1 },{"name":"maximum" ,"size":2014},{"name":"average" ,"size":1007.05}]},
+            {"name":"minutes per","children":[{"name":"minimum" ,"size":0.3048 },{"name":"maximum" ,"size":5.264},{"name":"average" ,"size":2.78}]},
+            {"name":"Hertz","children":[{"name":"minimum" ,"size":32 },{"name":"maximum" ,"size":105},{"name":"average" ,"size":68.5}]}
+          ]
+
+        },
+        {"name":"Electrical quantities",
+        "children":[
+          {"name":"Henry","children":[{"name":"minimum" ,"size":32 },{"name":"maximum" ,"size":67},{"name":"average" ,"size":49.5}]},
+          {"name":"Volt","children":[{"name":"minimum" ,"size":12},{"name":"maximum" ,"size":12},{"name":"average" ,"size":12}]}
+        ]
+        },
+        {"name":"Others",
+          "children":[
+            {"name":"Per","children":[{"name":"minimum" ,"size":0 },{"name":"maximum" ,"size":2009},{"name":"average" ,"size":1004.5}]},
+            {"name":"Meter per minute","children":[{"name":"minimum" ,"size":244 },{"name":"maximum" ,"size":352},{"name":"average" ,"size":298}]},
+            {"name":"m m","children":[{"name":"minimum" ,"size": 6},{"name":"maximum" ,"size":80},{"name":"average" ,"size":43}]},
+            {"name":"kg/cubic meter","children":[{"name":"minimum" ,"size":10 },{"name":"maximum" ,"size":30},{"name":"average" ,"size":20}]},
+            {"name":"kg m","children":[{"name":"minimum" ,"size":27.6 },{"name":"maximum" ,"size":115},{"name":"average" ,"size":71.3}]},
+            {"name":"meter per second","children":[{"name":"minimum" ,"size":0 },{"name":"maximum" ,"size":120},{"name":"average" ,"size":60}]},
+            {"name":"s s","children":[{"name":"minimum" ,"size":0 },{"name":"maximum" ,"size":100},{"name":"average" ,"size":50}]}
+          ]
+        }
+      ]
+
+    },
+    {"name":".edu",
+      "children":[ 
+        {"name":"Distance",
+          "children":[
+          {"name": "Miles", "children":[{"name":"minimum" ,"size":0.6214 },{"name":"maximum" ,"size":5909},{"name":"average" ,"size":2954.8}]},
+        {"name": "Meters", "children":[{"name":"minimum" ,"size":2.03 },{"name":"maximum" ,"size":3},{"name":"average" ,"size":2.515}]},
+        {"name": "Meters Per", "children":[{"name":"minimum" ,"size":2.03 },{"name":"maximum" ,"size":3},{"name":"average" ,"size":2.515}]},
+        {"name": "Centimeter", "children":[{"name":"minimum" ,"size":0.4536},{"name":"maximum" ,"size":45},{"name":"average" ,"size":27.72}]},
+        {"name": "mm", "children":[{"name":"minimum" ,"size":244 },{"name":"maximum" ,"size":467},{"name":"average" ,"size":355.5}]}
+          ]},
+        {"name":"Temperature",
+          "children":[
+      {"name": "Degree", "children":[{"name":"minimum" ,"size":18776 },{"name":"maximum" ,"size":44146},{"name":"average" ,"size":31461}]},
+      {"name": "Celcius", "children":[{"name":"minimum" ,"size":0.4536},{"name":"maximum" ,"size":45},{"name":"average" ,"size":27.72}]},
+      {"name": "Kelvin", "children":[{"name":"minimum" ,"size":1.1774 },{"name":"maximum" ,"size":151},{"name":"average" ,"size":76.08}]}
+          ]},
+        {"name":"Mass",
+          "children":[
+          {"name": "kilogram", "children":[{"name":"minimum" ,"size":1.1774 },{"name":"maximum" ,"size":151},{"name":"average" ,"size":76.08}]},
+    {"name": "gram", "children":[{"name":"minimum" ,"size":2.03 },{"name":"maximum" ,"size":3},{"name":"average" ,"size":2.515}]},
+    {"name": "litre", "children":[{"name":"minimum" ,"size":18776 },{"name":"maximum" ,"size":44146},{"name":"average" ,"size":31461}]}
+]},
+        {"name":"Light/Magnetism",
+          "children":[
+            {"name":"Weber","children":[{"name":"minimum" ,"size":244 },{"name":"maximum" ,"size":467},{"name":"average" ,"size":355.5}]}
+            
+          ]},
+        {"name":"Volume/Area/Surface",
+
+          "children":[
+            {"name":"Meter-Square","children":[{"name":"minimum" ,"size":12},{"name":"maximum" ,"size":12},{"name":"average" ,"size":12}]},
+            {"name":"Per Cubic Meter","children":[{"name":"minimum" ,"size":2.03 },{"name":"maximum" ,"size":3},{"name":"average" ,"size":2.515}]},
+            {"name":"Cubic Meter","children":[{"name":"minimum" ,"size":2.03 },{"name":"maximum" ,"size":3},{"name":"average" ,"size":2.515}]},
+            {"name":"per Meter Square","children":[{"name":"minimum" ,"size":1.1774 },{"name":"maximum" ,"size":151},{"name":"average" ,"size":76.08}]},
+            {"name":"per Meter cube","children":[{"name":"minimum" ,"size":18776 },{"name":"maximum" ,"size":44146},{"name":"average" ,"size":31461}]},
+            {"name":"cubic","children":[{"name":"minimum" ,"size":14387 },{"name":"maximum" ,"size":44146},{"name":"average" ,"size":31461}]}
+
+          ]},
+        {"name":"Force",
+        "children":[
+          {"name":"Newton","children":[{"name":"minimum" ,"size":2.03 },{"name":"maximum" ,"size":3},{"name":"average" ,"size":2.515}]},
+          {"name":"Joule","children":[{"name":"minimum" ,"size":0.4536},{"name":"maximum" ,"size":45},{"name":"average" ,"size":27.72}]},
+          {"name":"Watt","children":[{"name":"minimum" ,"size":18776 },{"name":"maximum" ,"size":44146},{"name":"average" ,"size":31461}]}
+        ]},
+        {"name":"Time/Frequency",
+          "children":[
+            {"name":"Minutes","children":[{"name":"minimum" ,"size":0.6214 },{"name":"maximum" ,"size":5909},{"name":"average" ,"size":2954.8}]},
+            {"name":"per second","children":[{"name":"minimum" ,"size":12},{"name":"maximum" ,"size":12},{"name":"average" ,"size":12}]},
+            {"name":"seconds","children":[{"name":"minimum" ,"size":2.03 },{"name":"maximum" ,"size":3},{"name":"average" ,"size":2.515}]},
+            {"name":"minutes per","children":[{"name":"minimum" ,"size":1.1774 },{"name":"maximum" ,"size":151},{"name":"average" ,"size":76.08}]},
+            {"name":"Hertz","children":[{"name":"minimum" ,"size":244 },{"name":"maximum" ,"size":467},{"name":"average" ,"size":355.5}]}
+          ]},
+        {"name":"Electrical quantities",
+        "children":[
+          {"name":"Henry","children":[{"name":"minimum" ,"size":0.4536},{"name":"maximum" ,"size":45},{"name":"average" ,"size":27.72}]},
+          {"name":"Volt","children":[{"name":"minimum" ,"size":2 },{"name":"maximum" ,"size":40},{"name":"average" ,"size":21}]},
+          {"name":"Amphere","children":[{"name":"minimum" ,"size":18776 },{"name":"maximum" ,"size":44146},{"name":"average" ,"size":31461}]}
+        ]},
+        {"name":"Others",
+          "children":[
+            {"name":"Per","children":[{"name":"minimum" ,"size":18776 },{"name":"maximum" ,"size":44146},{"name":"average" ,"size":31461}]},
+            
+            {"name":"m m","children":[{"name":"minimum" ,"size":2.03 },{"name":"maximum" ,"size":3},{"name":"average" ,"size":2.515}]},
+            {"name":"kg/cubic meter","children":[{"name":"minimum" ,"size":2.03 },{"name":"maximum" ,"size":3},{"name":"average" ,"size":2.515}]},
+            
+            {"name":"meter per second","children":[{"name":"minimum" ,"size":12},{"name":"maximum" ,"size":12},{"name":"average" ,"size":12}]},
+            {"name":"s s","children":[{"name":"minimum" ,"size":2 },{"name":"maximum" ,"size":40},{"name":"average" ,"size":21}]}
+          ]
+        }
+      ]},
+
+    {"name":".org",
+      "children":[ 
+        {"name":"Distance",
+          "children":[
+          {"name": "Miles", "children":[{"name":"minimum" ,"size":18776 },{"name":"maximum" ,"size":44146},{"name":"average" ,"size":31461}]},
+        {"name": "Meters", "children":[{"name":"minimum" ,"size":2 },{"name":"maximum" ,"size":40},{"name":"average" ,"size":21}]},
+        {"name": "Meters Per","children":[{"name":"minimum" ,"size":244 },{"name":"maximum" ,"size":467},{"name":"average" ,"size":355.5}]}
+          ]},
+        {"name":"Temperature",
+          "children":[
+      {"name": "Degree", "children":[{"name":"minimum" ,"size":0.4536},{"name":"maximum" ,"size":45},{"name":"average" ,"size":27.72}]},
+      {"name": "Celcius", "children":[{"name":"minimum" ,"size":2.03 },{"name":"maximum" ,"size":3},{"name":"average" ,"size":2.515}]},
+      {"name": "Kelvin", "children":[{"name":"minimum" ,"size":244 },{"name":"maximum" ,"size":467},{"name":"average" ,"size":355.5}]}
+          ]},
+        {"name":"Mass",
+          "children":[
+          {"name": "kilogram", "children":[{"name":"minimum" ,"size":1.1774 },{"name":"maximum" ,"size":151},{"name":"average" ,"size":76.08}]},
+    {"name": "per kilogram","children":[{"name":"minimum" ,"size":244 },{"name":"maximum" ,"size":467},{"name":"average" ,"size":355.5}]}
+]},
+        {"name":"Light/Magnetism",
+          "children":[
+            {"name":"Weber","children":[{"name":"minimum" ,"size":0.70 },{"name":"maximum" ,"size":650 },{"name":"average" ,"size":360}]},
+            {"name":"Lux","children":[{"name":"minimum" ,"size":12},{"name":"maximum" ,"size":12},{"name":"average" ,"size":12}]},
+            {"name":"Gray","children":[{"name":"minimum" ,"size":244 },{"name":"maximum" ,"size":467},{"name":"average" ,"size":355.5}]}
+          ]},
+        {"name":"Volume/Area/Surface",
+
+          "children":[
+            {"name":"Meter-Square","children":[{"name":"minimum" ,"size":0.4536},{"name":"maximum" ,"size":45},{"name":"average" ,"size":27.72}]},
+            {"name":"Per Cubic Meter","children":[{"name":"minimum" ,"size":3350 },{"name":"maximum" ,"size":40545},{"name":"average" ,"size":21947.5}]},
+            {"name":"Cubic Meter","children":[{"name":"minimum" ,"size":0.70 },{"name":"maximum" ,"size":650 },{"name":"average" ,"size":360}]},
+            {"name":"per Meter Square","children":[{"name":"minimum" ,"size":2.03 },{"name":"maximum" ,"size":3},{"name":"average" ,"size":2.515}]},
+            {"name":"per Meter cube","children":[{"name":"minimum" ,"size":3350 },{"name":"maximum" ,"size":40545},{"name":"average" ,"size":21947.5}]},
+            {"name":"Square","children":[{"name":"minimum" ,"size":0.70 },{"name":"maximum" ,"size":650 },{"name":"average" ,"size":360}]},
+            {"name":"cubic","children":[{"name":"minimum" ,"size":18776 },{"name":"maximum" ,"size":44146},{"name":"average" ,"size":31461}]}
+
+          ]},
+        {"name":"Force",
+        "children":[
+          {"name":"Newton","children":[{"name":"minimum" ,"size":18776 },{"name":"maximum" ,"size":44146},{"name":"average" ,"size":31461}]},
+          {"name":"Joule","children":[{"name":"minimum" ,"size":1.1774 },{"name":"maximum" ,"size":151},{"name":"average" ,"size":76.08}]},
+          {"name":"Watt","children":[{"name":"minimum" ,"size":0.6214 },{"name":"maximum" ,"size":5909},{"name":"average" ,"size":2954.8}]}
+        ]},
+        {"name":"Time/Frequency",
+          "children":[
+            {"name":"Minutes","children":[{"name":"minimum" ,"size":2 },{"name":"maximum" ,"size":40},{"name":"average" ,"size":21}]},
+            {"name":"per second","children":[{"name":"minimum" ,"size":244 },{"name":"maximum" ,"size":467},{"name":"average" ,"size":355.5}]},
+            {"name":"seconds","children":[{"name":"minimum" ,"size":3350 },{"name":"maximum" ,"size":40545},{"name":"average" ,"size":21947.5}]},
+            {"name":"minutes per","children":[{"name":"minimum" ,"size":3350 },{"name":"maximum" ,"size":40545},{"name":"average" ,"size":21947.5}]},
+            {"name":"Hertz","children":[{"name":"minimum" ,"size":18776 },{"name":"maximum" ,"size":44146},{"name":"average" ,"size":31461}]}
+          ]},
+        {"name":"Electrical quantities",
+        "children":[
+          {"name":"Henry","children":[{"name":"minimum" ,"size":3350 },{"name":"maximum" ,"size":40545},{"name":"average" ,"size":21947.5}]},
+          {"name":"Volt","children":[{"name":"minimum" ,"size":12},{"name":"maximum" ,"size":12},{"name":"average" ,"size":12}]}
+        ]},
+        {"name":"Others",
+          "children":[
+            {"name":"Per","children":[{"name":"minimum" ,"size":3350 },{"name":"maximum" ,"size":40545},{"name":"average" ,"size":21947.5}]},
+            {"name":"Meter per minute","children":[{"name":"minimum" ,"size":2 },{"name":"maximum" ,"size":40},{"name":"average" ,"size":21}]},
+            {"name":"m m","children":[{"name":"minimum" ,"size":0.4536},{"name":"maximum" ,"size":45},{"name":"average" ,"size":27.72}]},
+            {"name":"kg/cubic meter","children":[{"name":"minimum" ,"size":2 },{"name":"maximum" ,"size":40},{"name":"average" ,"size":21}]},
+            {"name":"kg m","children":[{"name":"minimum" ,"size":3350 },{"name":"maximum" ,"size":40545},{"name":"average" ,"size":21947.5}]},
+            {"name":"meter per second","children":[{"name":"minimum" ,"size":43 },{"name":"maximum" ,"size":49},{"name":"average" ,"size":46}]},
+            {"name":"s s","children":[{"name":"minimum" ,"size":244 },{"name":"maximum" ,"size":467},{"name":"average" ,"size":355.5}]}
+          ]}
+      ]},
+    {"name":".net",
+      "children":[ 
+        {"name":"Distance",
+          "children":[
+          {"name": "Miles", "children":[{"name":"minimum" ,"size":18776 },{"name":"maximum" ,"size":44146},{"name":"average" ,"size":31461}]},
+        {"name": "Meters", "children":[{"name":"minimum" ,"size":2 },{"name":"maximum" ,"size":40},{"name":"average" ,"size":21}]},
+        {"name": "Meters Per", "children":[{"name":"minimum" ,"size":3350 },{"name":"maximum" ,"size":40545},{"name":"average" ,"size":21947.5}]},
+        {"name": "Inches", "children":[{"name":"minimum" ,"size":1.1774 },{"name":"maximum" ,"size":151},{"name":"average" ,"size":76.08}]},
+        {"name": "Feet","children":[{"name":"minimum" ,"size":0.70 },{"name":"maximum" ,"size":650 },{"name":"average" ,"size":360}]}
+          ]},
+        {"name":"Temperature",
+          "children":[
+      {"name": "Degree","children":[{"name":"minimum" ,"size":2.03 },{"name":"maximum" ,"size":3},{"name":"average" ,"size":2.515}] },
+      {"name": "Celcius", "children":[{"name":"minimum" ,"size":18776 },{"name":"maximum" ,"size":44146},{"name":"average" ,"size":31461}]},
+      {"name": "Kelvin", "children":[{"name":"minimum" ,"size":0.4536},{"name":"maximum" ,"size":45},{"name":"average" ,"size":27.72}]},
+      {"name":"Fahrenheit","children":[{"name":"minimum" ,"size":244 },{"name":"maximum" ,"size":467},{"name":"average" ,"size":355.5}]}
+          ]},
+        {"name":"Mass",
+          "children":[
+          {"name": "kilogram", "children":[{"name":"minimum" ,"size":12},{"name":"maximum" ,"size":12},{"name":"average" ,"size":12}]},
+    {"name": "per kilogram", "children":[{"name":"minimum" ,"size":2 },{"name":"maximum" ,"size":40},{"name":"average" ,"size":21}]}
+]},
+        {"name":"Light/Magnetism",
+          "children":[
+            {"name":"Tesla","children":[{"name":"minimum" ,"size":18776 },{"name":"maximum" ,"size":44146},{"name":"average" ,"size":31461}]},
+            {"name":"Lux","children":[{"name":"minimum" ,"size":0.4536},{"name":"maximum" ,"size":45},{"name":"average" ,"size":27.72}]}
+          ]},
+        {"name":"Volume/Area/Surface",
+
+          "children":[
+            {"name":"Meter-Square","children":[{"name":"minimum" ,"size":2 },{"name":"maximum" ,"size":40},{"name":"average" ,"size":21}]},
+            {"name":"Per Cubic Meter","children":[{"name":"minimum" ,"size":3350 },{"name":"maximum" ,"size":40545},{"name":"average" ,"size":21947.5}]},
+            {"name":"Cubic Meter","children":[{"name":"minimum" ,"size":2.03 },{"name":"maximum" ,"size":3},{"name":"average" ,"size":2.515}]},
+            {"name":"per Meter Square","children":[{"name":"minimum" ,"size":0.4536},{"name":"maximum" ,"size":45},{"name":"average" ,"size":27.72}]},
+            {"name":"per Meter cube","children":[{"name":"minimum" ,"size":18776 },{"name":"maximum" ,"size":44146},{"name":"average" ,"size":31461}]}
+
+          ]},
+        {"name":"Force",
+        "children":[
+          {"name":"Newton","children":[{"name":"minimum" ,"size":12},{"name":"maximum" ,"size":12},{"name":"average" ,"size":12}]},
+          {"name":"Joule","children":[{"name":"minimum" ,"size":1.1774 },{"name":"maximum" ,"size":151},{"name":"average" ,"size":76.08}]},
+          {"name":"Watt","children":[{"name":"minimum" ,"size":0.4536},{"name":"maximum" ,"size":45},{"name":"average" ,"size":27.72}]}
+        ]},
+        {"name":"Time/Frequency",
+          "children":[
+            {"name":"Minutes","children":[{"name":"minimum" ,"size":0.4536},{"name":"maximum" ,"size":45},{"name":"average" ,"size":27.72}]},
+            {"name":"per second","children":[{"name":"minimum" ,"size":18776 },{"name":"maximum" ,"size":44146},{"name":"average" ,"size":31461}]},
+            {"name":"seconds","children":[{"name":"minimum" ,"size":2.03 },{"name":"maximum" ,"size":3},{"name":"average" ,"size":2.515}]},
+            {"name":"minutes per","children":[{"name":"minimum" ,"size":2 },{"name":"maximum" ,"size":40},{"name":"average" ,"size":21}]},
+            {"name":"Hertz","children":[{"name":"minimum" ,"size":3350 },{"name":"maximum" ,"size":40545},{"name":"average" ,"size":21947.5}]}
+          ]},
+        {"name":"Electrical quantities",
+        "children":[
+          
+          {"name":"Volt","children":[{"name":"minimum" ,"size":0.70 },{"name":"maximum" ,"size":650 },{"name":"average" ,"size":360}]}
+        ]},
+        {"name":"Others",
+          "children":[
+            {"name":"Per","children":[{"name":"minimum" ,"size":0.4536},{"name":"maximum" ,"size":45},{"name":"average" ,"size":27.72}]},
+            {"name":"Meter per minute","children":[{"name":"minimum" ,"size":18776 },{"name":"maximum" ,"size":44146},{"name":"average" ,"size":31461}]},
+            
+            {"name":"kg m","children":[{"name":"minimum" ,"size":12},{"name":"maximum" ,"size":12},{"name":"average" ,"size":12}]},
+            {"name":"meter per second","children":[{"name":"minimum" ,"size":2 },{"name":"maximum" ,"size":40},{"name":"average" ,"size":21}]},
+            {"name":"byte","children":[{"name":"minimum" ,"size":244 },{"name":"maximum" ,"size":467},{"name":"average" ,"size":355.5}]}
+            
+          ]}
+      ]},
+
+
+    {"name":".com",
+      "children":[ 
+        {"name":"Distance",
+          "children":[
+          {"name": "Miles", "children":[{"name":"minimum" ,"size":18776 },{"name":"maximum" ,"size":44146},{"name":"average" ,"size":31461}]},
+        {"name": "Meters", "children":[{"name":"minimum" ,"size":2 },{"name":"maximum" ,"size":40},{"name":"average" ,"size":21}]},
+        {"name": "Meters Per", "children":[{"name":"minimum" ,"size":0.4536},{"name":"maximum" ,"size":45},{"name":"average" ,"size":27.72}]}
+          ]},
+        {"name":"Temperature",
+          "children":[
+      {"name": "Degree", "children":[{"name":"minimum" ,"size":0.70 },{"name":"maximum" ,"size":650 },{"name":"average" ,"size":360}]},
+      {"name": "Celcius", "children":[{"name":"minimum" ,"size":2.03 },{"name":"maximum" ,"size":3},{"name":"average" ,"size":2.515}]},
+      {"name": "Kelvin", "children":[{"name":"minimum" ,"size":18776 },{"name":"maximum" ,"size":44146},{"name":"average" ,"size":31461}]}
+          ]},
+        {"name":"Mass",
+          "children":[
+          {"name": "kilogram", "children":[{"name":"minimum" ,"size":0.4536},{"name":"maximum" ,"size":45},{"name":"average" ,"size":27.72}]},
+    {"name": "per kilogram", "children":[{"name":"minimum" ,"size":3350 },{"name":"maximum" ,"size":40545},{"name":"average" ,"size":21947.5}]}
+]},
+        {"name":"Light/Magnetism",
+          "children":[
+            {"name":"Weber","children":[{"name":"minimum" ,"size":0.70 },{"name":"maximum" ,"size":650 },{"name":"average" ,"size":360}]},
+            {"name":"Lux","children":[{"name":"minimum" ,"size":1.1774 },{"name":"maximum" ,"size":151},{"name":"average" ,"size":76.08}]},
+            {"name":"Lumen","children":[{"name":"minimum" ,"size":12},{"name":"maximum" ,"size":12},{"name":"average" ,"size":12}]}
+          ]},
+        {"name":"Volume/Area/Surface",
+
+          "children":[
+            {"name":"Meter-Square","children":[{"name":"minimum" ,"size":2 },{"name":"maximum" ,"size":40},{"name":"average" ,"size":21}]},
+            {"name":"Per Cubic Centimeter","children":[{"name":"minimum" ,"size":2 },{"name":"maximum" ,"size":40},{"name":"average" ,"size":21}]},
+            {"name":"Cubic Meter","children":[{"name":"minimum" ,"size":3350 },{"name":"maximum" ,"size":40545},{"name":"average" ,"size":21947.5}]},
+            {"name":"per Meter Square","children":[{"name":"minimum" ,"size":0.4536},{"name":"maximum" ,"size":45},{"name":"average" ,"size":27.72}]},
+            {"name":"per Meter cube","children":[{"name":"minimum" ,"size":2.03 },{"name":"maximum" ,"size":3},{"name":"average" ,"size":2.515}]},
+            {"name":"Square","children":[{"name":"minimum" ,"size":12},{"name":"maximum" ,"size":12},{"name":"average" ,"size":12}]},
+            {"name":"cubic","children":[{"name":"minimum" ,"size":2 },{"name":"maximum" ,"size":40},{"name":"average" ,"size":21}]}
+
+          ]},
+        {"name":"Force",
+        "children":[
+          {"name":"Newton","children":[{"name":"minimum" ,"size":2.03 },{"name":"maximum" ,"size":3},{"name":"average" ,"size":2.515}]},
+          {"name":"Joule","children":[{"name":"minimum" ,"size":0.4536},{"name":"maximum" ,"size":45},{"name":"average" ,"size":27.72}]},
+          {"name":"Watt","children":[{"name":"minimum" ,"size":1.1774 },{"name":"maximum" ,"size":151},{"name":"average" ,"size":76.08}]}
+        ]},
+        {"name":"Time/Frequency",
+          "children":[
+            {"name":"Minutes","children":[{"name":"minimum" ,"size":2.03 },{"name":"maximum" ,"size":3},{"name":"average" ,"size":2.515}]},
+            {"name":"per second","children":[{"name":"minimum" ,"size":3350 },{"name":"maximum" ,"size":40545},{"name":"average" ,"size":21947.5}]},
+            {"name":"seconds","children":[{"name":"minimum" ,"size":18776 },{"name":"maximum" ,"size":44146},{"name":"average" ,"size":31461}]},
+            {"name":"minutes per","children":[{"name":"minimum" ,"size":18776 },{"name":"maximum" ,"size":44146},{"name":"average" ,"size":31461}]},
+            {"name":"Hertz","children":[{"name":"minimum" ,"size":0.70 },{"name":"maximum" ,"size":650 },{"name":"average" ,"size":360}]}
+          ]},
+        {"name":"Electrical quantities",
+        "children":[
+          {"name":"Henry","children":[{"name":"minimum" ,"size":2.03 },{"name":"maximum" ,"size":3},{"name":"average" ,"size":2.515}]},
+          {"name":"Volt","children":[{"name":"minimum" ,"size":12},{"name":"maximum" ,"size":12},{"name":"average" ,"size":12}]}
+        ]},
+        {"name":"Others",
+          "children":[
+            {"name":"Per","children":[{"name":"minimum" ,"size":0.4536},{"name":"maximum" ,"size":45},{"name":"average" ,"size":27.72}]},
+            {"name":"Meter per minute","children":[{"name":"minimum" ,"size":18776 },{"name":"maximum" ,"size":44146},{"name":"average" ,"size":31461}]},
+            {"name":"gigabytes","children":[{"name":"minimum" ,"size":0.6214 },{"name":"maximum" ,"size":5909},{"name":"average" ,"size":2954.8}]},
+            {"name":"kg/cubic meter","children":[{"name":"minimum" ,"size":1.1774 },{"name":"maximum" ,"size":151},{"name":"average" ,"size":76.08}]},
+            {"name":"bitrate","children":[{"name":"minimum" ,"size":0.4536},{"name":"maximum" ,"size":45},{"name":"average" ,"size":27.72}]},
+            {"name":"meter per second","children":[{"name":"minimum" ,"size":2.03 },{"name":"maximum" ,"size":3},{"name":"average" ,"size":2.515}]},
+            {"name":"s s","children":[{"name":"minimum" ,"size":18776 },{"name":"maximum" ,"size":44146},{"name":"average" ,"size":31461}]}
+          ]}
+      ]}
+]
+}

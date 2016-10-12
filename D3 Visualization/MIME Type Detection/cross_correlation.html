@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Cross Correlation Matrix</title>
+  
+
+
+  <script type='text/javascript' src='http://d3js.org/d3.v3.min.js'></script>
+  <script type='text/javascript' src="correxplorer.js"></script>
+  <link rel="stylesheet" type="text/css" href="correxplorer.css">
+</head>
+
+<body>
+  <div id="menu">
+     <select id="dropdown" onchange="display();" class="styled-select blue semi-square">
+      <option>Please select a document type</option>
+      <option >EPUB</option>
+      <option>PDF</option>
+      <option >APP+EXCEL</option>
+      <option>JPEG</option>
+      <option >FLV</option>
+      <option>MSWORD</option>
+      <option >PHP</option>
+      <option>PLAIN</option>
+      <option >QUICKTIME</option>
+      <option>RFC822</option>
+      <option >VIDEO+MP4</option>
+      <option>AUDIO+MPEG</option>
+      <option >XHTML+XML</option>
+      <option>ZIP</option>
+      <option>AUDIO+MPEG</option>
+    </select>
+    &nbsp;&nbsp;&nbsp;
+ <font size=14>Cross Correlation Matrix</font>
+
+  <p>
+    Transpose?
+    <input type="checkbox" id="transpose">
+    <button id="file_load">Load CSV!</button>
+  
+    Sort by:
+    <select id="sort_func">
+      <option value="abs_value">by Absolute Value</option>
+      <option value="value" selected="selected">by Value</option>
+      <option value="similarity">by Similarity</option>
+      <option value="alphabetic">Alphabetic</option>
+      <option value="original">Original</option>
+    </select>
+
+    Keep symmetry?
+    <input type='checkbox' id="keep_symmetry" checked="true">
+    Zoom?
+    <input type='text' id="zoom" value="1.">
+  </p>
+</div>
+<div id="display">
+  </div>
+  <div class="tooltip" style="opacity: 0.01"></div>
+
+</body>
+
+</html>
+

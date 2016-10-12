@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>FHT Analysis</title>
+  
+
+
+  <script type='text/javascript' src='http://d3js.org/d3.v3.min.js'></script>
+  <script type='text/javascript' src="correxplorer1.js"></script>
+  <link rel="stylesheet" type="text/css" href="correxplorer.css">
+</head>
+
+<body>
+   <div id="menu">
+     <select id="dropdown" onchange="display();" class="styled-select blue semi-square">
+      <option>Please select a document type</option>
+      <option >EPUB4H</option>
+      <option >EPUB8H</option>
+      <option >EPUB16H</option>
+      <option >EPUB4T</option>
+      <option >EPUB8T</option>
+      <option >EPUB16T</option>
+      <option>PDF4H</option>
+      <option>PDF8H</option>
+      <option>PDF16H</option>
+      <option>PDF4T</option>
+      <option>PDF8t</option>
+      <option>PDF16T</option>
+      <option >APP+EXCEL4H</option>
+      <option >APP+EXCEL8H</option>
+      <option >APP+EXCEL16H</option>
+      <option >APP+EXCEL4T</option>
+      <option >APP+EXCEL8T</option>
+      <option >APP+EXCEL16T</option>
+      <option>JPEG4H</option>
+      <option>JPEG8H</option>
+      <option>JPEG16H</option>
+       <option>JPEG4T</option>
+      <option>JPEG8T</option>
+      <option>JPEG16T</option>
+      <option >FLV4H</option>
+      <option >FLV8H</option>
+      <option >FLV16H</option>
+      <option >FLV4T</option>
+      <option >FLV8T</option>
+      <option >FLV16T</option>
+      <option>MSWORD4H</option>
+      <option>MSWORD8H</option>
+      <option>MSWORD16H</option>
+       <option>MSWORD4T</option>
+      <option>MSWORD8T</option>
+      <option>MSWORD16T</option>
+      <option >PHP4H</option>
+      <option >PHP8H</option>
+      <option >PHP16H</option>
+      <option >PHP4T</option>
+      <option >PHP8T</option>
+      <option >PHP16T</option>
+      <option>PLAIN4H</option>
+      <option>PLAIN8H</option>
+      <option>PLAIN16H</option>
+      <option>PLAIN4T</option>
+      <option>PLAIN8T</option>
+      <option>PLAIN16T</option>
+      <option >QUICKTIME4H</option>
+      <option >QUICKTIME8H</option>
+      <option >QUICKTIME16H</option>
+       <option >QUICKTIME4T</option>
+      <option >QUICKTIME8T</option>
+      <option >QUICKTIME16T</option>
+      <option>RFC8224H</option>
+       <option>RFC8228H</option>
+        <option>RFC82216H</option>
+        <option>RFC8224T</option>
+       <option>RFC8228T</option>
+        <option>RFC82216T</option>
+      <option >VIDEO+MP44H</option>
+      <option >VIDEO+MP48H</option>
+      <option >VIDEO+MP416H</option>
+      <option >VIDEO+MP44T</option>
+      <option >VIDEO+MP48T</option>
+      <option >VIDEO+MP416T</option>
+      <option>AUDIO+MPEG4H</option>
+      <option>AUDIO+MPEG8H</option>
+      <option>AUDIO+MPEG16H</option>
+      <option>AUDIO+MPEG4T</option>
+      <option>AUDIO+MPEG8T</option>
+      <option>AUDIO+MPEG16T</option>
+      <option >XHTML+XML4H</option>
+      <option >XHTML+XML8H</option>
+      <option >XHTML+XML16H</option>
+      <option >XHTML+XML4T</option>
+      <option >XHTML+XML8T</option>
+      <option >XHTML+XML16T</option>
+      <option>ZIP4H</option>
+      <option>ZIP8H</option>
+      <option>ZIP16H</option>
+      <option>ZIP4T</option>
+      <option>ZIP8T</option>
+      <option>ZIP16T</option>
+      <option>AUDIO+MPEG4H</option>
+      <option>AUDIO+MPEG8H</option>
+      <option>AUDIO+MPEG16H</option>
+      <option>AUDIO+MPEG4T</option>
+      <option>AUDIO+MPEG8T</option>
+      <option>AUDIO+MPEG16T</option>
+    </select>
+    &nbsp;&nbsp;&nbsp;
+ <font size=14>FHT Analysis Matrix</font>
+
+  <p>
+    Transpose?
+    <input type="checkbox" id="transpose">
+    <button id="file_load">Load CSV!</button>
+  
+    Sort by:
+    <select id="sort_func">
+      <option value="abs_value">by Absolute Value</option>
+      <option value="value" selected="selected">by Value</option>
+      <option value="similarity">by Similarity</option>
+      <option value="alphabetic">Alphabetic</option>
+      <option value="original">Original</option>
+    </select>
+
+    Keep symmetry?
+    <input type='checkbox' id="keep_symmetry" checked="true">
+    Zoom?
+    <input type='text' id="zoom" value="1.">
+  </p>
+</div>
+<div id="display">
+  </div>
+  <div class="tooltip" style="opacity: 0.01"></div>
+</body>
+
+</html>
+

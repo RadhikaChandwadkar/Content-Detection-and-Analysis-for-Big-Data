@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<head>
+  <title>Byte Frequency Analysis</title>
+  <style>
+
+  .mytooltip {
+  position:absolute;
+  text-align: center;
+  width: 250px;
+  height:auto;
+  background-color: #307ABA;
+  border-radius: 10px;
+  color: #FFFFFF;
+  padding: 6px 12px;
+  z-index:3;
+}
+ 
+.mytooltip:after {
+  box-sizing: border-box;
+  display: inline;
+  width: 100%;
+  line-height: 1;
+  color: #307ABA;
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+  margin: -3px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+ 
+.mytooltip span {
+    display: block;
+    text-align: center;
+    width: 200px;
+    height: auto;
+    margin: 5px auto;
+  }
+
+  .bar{
+    fill: blue;
+  }
+
+  .bar:hover{
+    fill: brown;
+  }
+
+  .axis {
+    font: 10px sans-serif;
+  }
+
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+  }
+
+.semi-square {
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+}
+.styled-select{
+   background: transparent;
+   border: none;
+   font-size: 14px;
+   height: 29px;
+   padding: 5px; /* If you add too much padding here, the options won't show in IE */
+   width: 268px;
+}
+.blue    { background-color: #3b8ed2; }
+
+body{
+  background:gray;
+}
+
+#menu{
+  top:-20px;
+  position: relative;
+  background: #33adff;
+  text-align: center;
+  height:100px;
+  font-size:30;
+  padding:0px;
+}
+  </style>
+</head>
+
+<body>
+  <div id="menu" >
+    <p>
+      <br>
+    <select id="dropdown" onchange="display();" class="styled-select blue semi-square">
+      <option>Please select a document type</option>
+      <option >EPUB</option>
+      <option>PDF</option>
+      <option >APP+EXCEL</option>
+      <option>OCTET_STREAM</option>
+      <option >FLV</option>
+      <option>MSWORD</option>
+      <option >PHP</option>
+      <option>PLAIN</option>
+      <option >QUICKTIME</option>
+      <option>RFC822</option>
+      <option >VIDEO+MP4</option>
+      <option>JPEG</option>
+      <option >AUDIO+MPEG</option>
+      <option>ZIP</option>
+      <option >XHTML+XML</option>
+    </select>
+
+    <font size=8 family=verdana>&nbsp;&nbsp; &nbsp; &nbsp; Byte Frequency Analysis</font></p>
+ </div>
+<script src="d3/d3.min.js"></script>
+<script src="d3/d3.js"></script>
+
+<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+
+<script>
+// set the dimensions of the canvas
+function display(){
+d3.selectAll("svg").remove();
+
+var margin = {top: 20, right: 20, bottom: 70, left: 40},
+    width = 1200 - margin.left - margin.right,
+    height = 600 - margin.top - margin.bottom;
+var pad = 20,
+    left_pad = 100;
+var doc=document.getElementById("dropdown");
+var url=doc.options[doc.selectedIndex].text;
+// set the ranges
+
+
+// add the SVG element
+var svg = d3.select("body").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", 
+          "translate(" + margin.left + "," + margin.top + ")");
+
+
+var myTool = d3.select("body")
+                  .append("div")
+                  .attr("class", "mytooltip")
+                  .style("opacity", "0")
+                  .style("display", "none");
+
+// load the data
+d3.json("json/BFA_FingerPrint_JsonFiles/"+url+".json", function(error, data) {
+  console.log("dataloaded");
+
+
+  var x = d3.scale.linear().domain([0, 260]).range([left_pad, width-pad]),
+    y = d3.scale.linear().domain([1,0 ]).range([pad, height-pad*2]);
+
+// define the axis
+var xAxis = d3.svg.axis()
+    .scale(x)
+    .orient("bottom")
+    .ticks(20);
+
+
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left")
+    .ticks(20);
+
+
+
+
+
+  //console.log(data[0].byte);
+  // add axis
+  svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis)
+    .selectAll("text")
+      .style("text-anchor", "end")
+      .attr("dx", "-.8em")
+      .attr("dy", "-.55em")
+      .attr("transform", "rotate(-90)" );
+
+  svg.append("g")
+      .attr("class", "y axis")
+      .call(yAxis)
+    .append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 5)
+      .attr("dy", ".71em")
+      .style("text-anchor", "end")
+      .text("Frequency");
+
+
+    svg.selectAll("bar")
+    .data(data)
+    .enter()
+    .append("rect")
+    .attr("class","bar")
+    .attr("x",function(d){return x(d.byte);})
+    .attr("y",function(d){return y(d.frequency);})
+    .attr("height",function(d){return height-y(d.frequency);})
+    .attr("width",3)
+    .on("mouseover", function(d) {  
+                d3.select(this)
+                    .transition()
+                    .duration(500)
+                    .attr("x", function(d) { return x(d.byte);}) //The bar moves to the left a bit
+                    .style("cursor", "pointer")
+                     myTool
+              .transition()  //Opacity transition when the tooltip appears
+              .duration(500)
+              .style("opacity", "1")                           
+              .style("display", "block"); 
+
+              myTool.html("Frequency: "+d.frequency +" Byte: "+d.byte)
+               .style("left", (d3.event.pageX -138)+'px') 
+               .style("top", (d3.event.pageY -80)+'px') 
+              })
+
+     //The tooltip appears
+     .on("mouseout", function(d){  //Mouse event
+            d3.select(this)
+                .transition()
+                .duration(500)
+                .attr("x", function(d) { return x(d.byte); })
+                .style("cursor", "normal")
+                .attr("width", 3)
+                myTool
+                    .transition()  //Opacity transition when the tooltip disappears
+                .duration(300)
+                .style("opacity", "0")            
+                .style("display", "none")  //The tooltip disappears
+      });
+});
+}
+</script>
+
+</body>

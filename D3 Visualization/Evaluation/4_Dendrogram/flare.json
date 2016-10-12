@@ -1,0 +1,48 @@
+{
+ "name": "request and the response returned",
+ "children": [
+  {
+   "name": "Sucessful",
+   "children":
+   [
+    {"name":"url:rdc.noaq.gov/benifits/ReqInfo.doc","size":100},
+    {"name":"Content type in request header:application/msword","size":100},
+    {"name":"Content type in response header:application/msword","size":100},
+    {"name":"Content length in response:105043","size":100},
+    {"name":"method:GET","size":100},
+    {"name":"status:200","size":100},
+    {"name":"server:apache","size":100},
+    {"name":"body:......all the data in doc format.....","size":100}
+   ]
+  },
+  {
+   "name": "Unsuccessful",
+   "children":
+   [
+    {"name":"https://www.aoncadis.org/dataset/id/0d3eb9b8-dd45-11de-bfaf-00C0f03d5b7c.dif","size":100},
+    {"name":"Content type in request header:application/dif+xml","size":100},
+    {"name":"Content type in response header:text/plain","size":100},
+    {"name":"Content length in response:0","size":100},
+    {"name":"method:GET","size":100},
+    {"name":"status:404","size":100},
+    {"name":"server:-","size":100},
+    {"name":"body:<empty>","size":100}
+   ]
+  },
+  {
+   "name": "Content Mismatch",
+   "children":
+   [
+    {"name":"url: http://www.nb.no/services/iff/api/URN:NBN:no-nb-digibok_2011062806089_C1/info.json","size":100},
+    {"name":"Content type in request header:application/json","size":100},
+    {"name":"Content type in response header:application/xml","size":100},
+    {"name":"Content length in response:368","size":100},
+    {"name":"method:GET","size":100},
+    {"name":"status:200","size":100},
+    {"name":"server:nginx","size":100},
+    {"name":"body:......all the data in json format.....","size":100}
+   ]
+  }
+  ]
+}
+  

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Polar Dataset Analysis</title>
+    <style>
+    #chart {
+
+  height: 800px;
+  position: relative;
+  width: 1200px;
+  text-align: center;
+}
+
+.tooltip {
+  background: #eee;
+  box-shadow: 0 0 5px #999999;
+  color: #333;
+  display: none;
+  font-size: 12px;
+  left: 130px;
+  padding: 10px;
+  position: absolute;
+  text-align: center;
+  top: 95px;
+  width: 110px;
+  z-index: 10;
+}
+
+#text{
+  top:-20px;
+  position: relative;
+  background: #33adff;
+  text-align: center;
+  height:100px;
+  font-size:30;
+  padding:0px;
+}
+
+p{
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+#subtitle{
+  padding-top:0px;
+}
+
+body{
+  background:gray;
+}
+    </style>
+  </head>
+  <body>
+   <div id="text">
+    <p>Language Diversity Analysis of the Polar Data</p>
+    <p id="subtitle">(Countries with maximum publications)
+   </div>
+   <br><br>
+    <div id="chart"></div>
+    <script src="d3.min.js"></script>
+    <script>
+      (function(d3) {
+        'use strict';
+
+        var dataset = [
+    {label:"no" ,count: 36406},
+{label:"de"  ,count:1191},
+{label:"fi" ,count: 1013},
+{label:"ru"  ,count:572},
+{label:"be" ,count: 12},
+{label:"pt" ,count: 963},
+{label:"lt" ,count: 329209},
+{label:"fr" ,count: 25644},
+{label:"hu" ,count: 12030},
+{label:"uk" ,count: 368},
+{label:"sk",count: 6472},
+{label:"sl" ,count: 887},
+{label:"ca",count: 792},
+{label:"sv" ,count: 279},
+{label:"gl" ,count: 4323},
+{label:"el" ,count: 118},
+{label:"en" ,count: 799523},
+{label:"eo" ,count: 523},
+{label:"is"  ,count:1374},
+{label:"it" ,count: 51591},
+{label:"es" ,count: 2419},
+{label:"et" ,count: 36387},
+{label:"th" ,count: 318},
+{label:"fa" ,count: 341},
+{label:"pl" ,count: 440},
+{label:"ro" ,count: 39080},
+{label:"da" ,count: 215},
+{label:"nl" ,count: 341},
+{label:"unknown",count: 8},
+            ];
+
+
+
+
+        var width = 600;
+        var height = 600;
+        var radius = Math.min(width, height) / 2;
+      var data;
+        var color = d3.scale.category20b();
+
+
+        var svg = d3.select('#chart')
+          .append('svg')
+          .attr('width', width)
+          .attr('height', height)
+          .append('g')
+          .attr("display","block")
+          .attr("margin","auto")
+          .attr('transform', 'translate(' + (width / 2) + 
+            ',' + (height / 2) + ')');
+
+        var arc = d3.svg.arc()
+          .outerRadius(radius);
+
+        var pie = d3.layout.pie()
+          .value(function(d) { 
+          	console.log("count is:"+d.count);
+          	return d.count; })
+          .sort(null);
+
+        var path = svg.selectAll('path')
+          .data(pie(dataset))
+          .enter()
+          .append('path')
+          .attr('d', arc)
+          .attr('fill', function(d, i) { 
+          	console.log(d.data.label);
+            return color(d.data.label);
+});
+                                  
+
+
+   
+path.on('mouseover', function(d) {
+  var total = d3.sum(dataset.map(function(d) {
+    return d.count;
+  }));
+  
+  var percent = Math.round(1000 * d.data.count / total) / 10;
+  tooltip.select('.label').html(d.data.label);
+  //tooltip.select('.count').html(d.data.count); 
+  tooltip.select('.percent').html(percent + '%'); 
+  tooltip.style('display', 'block');
+});
+
+path.on('mouseout', function() {
+  tooltip.style('display', 'none');
+});
+
+path.on('mousemove', function(d) {
+  tooltip.style('top', (d3.event.layerY + 10) + 'px')
+    .style('left', (d3.event.layerX + 10) + 'px');
+});
+
+
+  var tooltip = d3.select('#chart')            // NEW 
+  .append('div')                             // NEW
+  .attr('class', 'tooltip');                 // NEW
+
+tooltip.append('div')                        // NEW
+  .attr('class', 'label');                   // NEW
+
+tooltip.append('div')                        // NEW
+  .attr('class', 'count');                   // NEW
+
+tooltip.append('div')                        // NEW
+  .attr('class', 'percent');                 // NEW
+
+        
+      })(window.d3);
+    </script>
+  </body>
+</html>
